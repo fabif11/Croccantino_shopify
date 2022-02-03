@@ -22,12 +22,17 @@
             "text_style": "subtitle"
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "98d5404d-7de1-43ca-9ee0-fec8db9f15ab": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Description",
             "icon": "none",
-            "content": "",
+            "content": "<p>{{ product.metafields.my_fields.description | metafield_tag }}<\/p>",
             "page": ""
           }
         },
@@ -40,16 +45,11 @@
             "page": ""
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
         "3c8ad072-bda8-4978-b86d-a5b31ac45aa5": {
           "type": "collapsible_variant_tab",
           "settings": {
             "heading": "Variant",
-            "icon": "shirt",
+            "icon": "none",
             "picker_type": "button"
           }
         },
@@ -107,9 +107,9 @@
         "vendor",
         "title",
         "caption",
+        "price",
         "98d5404d-7de1-43ca-9ee0-fec8db9f15ab",
         "faa811eb-be51-42c1-a876-98b8817b396c",
-        "price",
         "3c8ad072-bda8-4978-b86d-a5b31ac45aa5",
         "quantity_selector",
         "buy_buttons",
